@@ -44,7 +44,7 @@ export default function Tickets() {
       return;
     }
 
-    if (!["open", "in progress", "closed"].includes(form.status)) {
+    if (!["open", "in_progress", "closed"].includes(form.status)) {
       setMessage("Invalid status selected.");
       return;
     }
@@ -112,7 +112,7 @@ export default function Tickets() {
           required
         >
           <option value="open">Open</option>
-          <option value="in progress">In Progress</option>
+          <option value="in_progress">In Progress</option>
           <option value="closed">Closed</option>
         </select>
 
